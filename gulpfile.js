@@ -46,6 +46,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		// 'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
 		'app/js/_libs.js', // JS libraries (all in one)
+		'node_modules/fslightbox/index.js', 
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -106,6 +107,11 @@ gulp.task('rsync', function() {
 	}))
 });
 
+gulp.task('icons', function() {
+	return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+			.pipe(gulp.dest('./app/fonts/fontawesome'));
+});
+
 gulp.task('watch', function() {
 	gulp.watch('app/sass/**/*.sass', gulp.parallel('styles'));
 	gulp.watch(['app/js/_custom.js', 'app/js/_libs.js'], gulp.parallel('scripts'));
@@ -113,4 +119,4 @@ gulp.task('watch', function() {
 	gulp.watch('app/img/_src/**/*', gulp.parallel('img'));
 });
 
-gulp.task('default', gulp.parallel('img', 'styles', 'scripts', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('img', 'styles', 'scripts', 'icons', 'browser-sync', 'watch'));

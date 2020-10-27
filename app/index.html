@@ -1,47 +1,633 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
+    <title>Loft Furniture</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
 
-	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
 
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <link rel="icon" href="img/favicon.png" />
+    <meta property="og:image" content="img/@1x/preview.jpg" />
 
-	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
 
-	<link rel="icon" href="img/favicon.png">
-	<meta property="og:image" content="img/@1x/preview.jpg">
-	
-	<link rel="stylesheet" href="css/styles.min.css">
+  <body>
+    <section class="home">
+      <header>
+        <div class="container">
+          <nav
+            class="align-items-center col-12 col-lg-9 d-inline-flex justify-content-between"
+          >
+            <div class="logo col-6 col-xs-4 col-sm-3">
+              <img src="img/logo-loft.svg" alt="" class="img-responsive" />
+            </div>
 
-</head>
+            <input type="checkbox" id="show-menu" role="button" />
+            <label for="show-menu" class="d-none-md show-menu">
+              <div class="toggle">
+                <span></span>
+              </div>
+            </label>
+            <ul class="menu">
+              <li><a href="#products" class="scroll">Продукция</a></li>
+              <li><a href="#gallery" class="scroll">Галерея</a></li>
+              <li><a href="#reviews" class="scroll">Отзывы</a></li>
+              <li><a href="#contacts" class="scroll">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="d-lg-inline-block d-none nav-contact text-right">
+            <div class="nav-contact__phone h4 mb-0">
+              +375 (29) 737-637-7
+            </div>
+            <div class="nav-contact__callback">
+              <a
+                href="#myModal"
+                class="text-secondary font-weight-bold btnModal"
+                data-toggle="modal"
+                data-target="#myModal"
+                data-call="Обратный звонок"
+                >обратный звонок</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="main-offer">
+          <h1>Мебель в стиле "Лофт"</h1>
+          <p>изготовление по индивидуальному заказу</p>
+          <p>от 7 рабочих дней</p>
+          <a href="#myModal" 
+             class="btn btn-primary arrow btnModal"
+             data-toggle="modal"
+             data-target="#myModal"
+             data-call="Обратный звонок"
+            >Получить консультацию <i class="icon fas fa-phone"></i
+          ></a>
+        </div>
+      </div>
+      <div class="plus__section col-11 col-xs-10 col-sm-9">
+        <div class="container">
+          <div class="row">
+            <div class="plus__card col-6 col-sm-3">
+              <div class="plus__title align-self-xs-center">
+                <img src="img/icon-light.svg" alt="" />
+                <h4>Дизайн</h4>
+              </div>
+              <div class="plus__desc mx-xs-auto">
+                <p class="">мы разработаем<br />уникальный проект</p>
+              </div>
+            </div>
+            <div class="plus__card col-6 col-sm-3">
+              <div class="plus__title align-self-xs-center">
+                <img src="img/icon-pin.svg" alt="" />
+                <h4>Доставка</h4>
+              </div>
+              <div class="plus__desc mx-xs-auto">
+                <p class="">в любую точку РБ<br />по изготовлению</p>
+              </div>
+            </div>
+            <div class="plus__card col-6 col-sm-3">
+              <div class="plus__title align-self-xs-center">
+                <img src="img/icon-guard.svg" alt="" />
+                <h4>Гарантии</h4>
+              </div>
+              <div class="plus__desc mx-xs-auto">
+                <p class="">до 10 лет <br />на все наши работы</p>
+              </div>
+            </div>
+            <div class="plus__card col-6 col-sm-3">
+              <div class="plus__title align-self-xs-center">
+                <img src="img/icon-thumbs-up.svg" alt="" />
+                <h4>Опыт</h4>
+              </div>
+              <div class="plus__desc mx-xs-auto">
+                <p class="">более 200 заказов<br />уже выполнено</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<body>
+    <section id="products" class="products">
+      <div class="col" align="center">
+        <img src="img/chevron-down.svg" alt="" />
+      </div>
+      <div class="section__title">
+        <h2>Что мы изготавливаем</h2>
+      </div>
+      <div class="section__products col-10 mx-auto">
+        <div class="container">
+          <div class="justify-content-around row mb-md-5">
+            <div class="col-8 col-sm-5 col-md-3 product__card">
+              <a
+                class="opacity-0 "
+                data-fslightbox="gallery1"
+                href="img/_src/gal-1/1.jpg"
+              ><span>Примеры <i class="icon fas fa-search"></i></span></a>
+              <a href="img/_src/gal-1/2.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/3.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/4.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/5.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/6.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/7.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/8.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/9.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <a href="img/_src/gal-1/10.jpg" data-fslightbox="gallery1" class="hide"></a>
+              <img
+                src="img/@2x/veshalki.jpg"
+                class="img-responsive w100"
+                alt=""
+              />
+              <div class="product__desc">
+                <h5 class="product__title">Вешалки</h5>
+                <span class="product__cost">от 160 руб</span>
+              </div>
+            </div>
+            <div class="col-8 col-sm-5 col-md-3 product__card">
+              <a
+                class="opacity-0 "
+                data-fslightbox="gallery2"
+                href="img/_src/gal-2/1.jpg"
+              ><span>Примеры <i class="icon fas fa-search"></i></span></a>
+              <a href="img/_src/gal-2/2.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/3.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/4.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/5.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/6.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/7.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/8.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/9.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <a href="img/_src/gal-2/10.jpg" data-fslightbox="gallery2" class="hide"></a>
+              <img
+                src="img/@2x/stulia.jpg"
+                class="img-responsive w100"
+                alt=""
+              />
+              <div class="product__desc">
+                <h5 class="product__title">Стулья</h5>
+                <span class="product__cost">от 100 руб</span>
+              </div>
+            </div>
+            <div class="col-8 col-sm-5 col-md-3 product__card">
+              <a
+                class="opacity-0 "
+                data-fslightbox="gallery3"
+                href="img/_src/gal-3/1.jpg"
+              ><span>Примеры <i class="icon fas fa-search"></i></span></a>
+              <a href="img/_src/gal-3/2.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/3.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/4.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/5.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/6.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/7.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/8.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/9.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <a href="img/_src/gal-3/10.jpg" data-fslightbox="gallery3" class="hide"></a>
+              <img src="img/@2x/stoly.jpg" class="img-responsive w100" alt="" />
+              <div class="product__desc">
+                <h5 class="product__title">Столы</h5>
+                <span class="product__cost">от 150 руб</span>
+              </div>
+            </div>
+          </div>
+          <div class="justify-content-around row mb-md-5">
+            <div class="col-8 col-sm-5 col-md-3 product__card">
+              <a
+                class="opacity-0 "
+                data-fslightbox="gallery4"
+                href="img/_src/gal-4/1.jpg"
+              ><span>Примеры <i class="icon fas fa-search"></i></span></a>
+              <a href="img/_src/gal-4/2.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/3.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/4.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/5.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/6.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/7.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/8.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/9.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <a href="img/_src/gal-4/10.jpg" data-fslightbox="gallery4" class="hide"></a>
+              <img
+                src="img/@2x/svetilniki.jpg"
+                class="img-responsive w100"
+                alt=""
+              />
+              <div class="product__desc">
+                <h5 class="product__title">Светильники</h5>
+                <span class="product__cost">от 120 руб</span>
+              </div>
+            </div>
+            <div class="col-8 col-sm-5 col-md-3 product__card">
+              <a
+                class="opacity-0 "
+                data-fslightbox="gallery5"
+                href="img/_src/gal-5/1.jpg"
+              ><span>Примеры <i class="icon fas fa-search"></i></span></a>
+              <a href="img/_src/gal-5/2.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/3.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/4.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/5.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/6.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/7.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/8.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/9.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <a href="img/_src/gal-5/10.jpg" data-fslightbox="gallery5" class="hide"></a>
+              <img
+                src="img/@2x/stellagi.jpg"
+                class="img-responsive w100"
+                alt=""
+              />
+              <div class="product__desc">
+                <h5 class="product__title">Стеллажи</h5>
+                <span class="product__cost">от 170 руб</span>
+              </div>
+            </div>
+            <div class="col-8 col-sm-5 col-md-3 product__card">
+              <a
+                class="opacity-0 "
+                data-fslightbox="gallery6"
+                href="img/_src/gal-6/1.jpg"
+              ><span>Примеры <i class="icon fas fa-search"></i></span></a>
+              <a href="img/_src/gal-6/2.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/3.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/4.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/5.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/6.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/7.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/8.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/9.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <a href="img/_src/gal-6/10.jpg" data-fslightbox="gallery6" class="hide"></a>
+              <img src="img/@2x/polki.jpg" class="img-responsive w100" alt="" />
+              <div class="product__desc">
+                <h5 class="product__title">Полки</h5>
+                <span class="product__cost">от 170 руб</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container center">
+          <a href="#myModal" 
+             class="btn btn-primary btnModal"
+             data-toggle="modal"
+             data-target="#myModal"
+             data-call="Обратный звонок"
+            >Рассчитать стоимость <i class="icon fas fa-calculator"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!--     <section class="special">
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <div class="section__title" align="left">
+              <h2>Специальное предложение</h2>
+            </div>
+            <div class="special__offer">
+              <div class="offer__title">Стол письменный “STEP”</div>
+              <p>Высота х Длина х Ширина : 760 х 1200 х 600мм</p>
+              <p>Каркас: металл, цвет - шелковисто-черный</p>
+              <p>Полки и столешница: массив сосны</p>
+              <span>Возможен подбор цвета и массива</span>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="offer__image">
+              <img src="img/@2x/offer-table.png" class="img-responsive" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
-	<!-- Custom HTML / Remove before use -->
+    <section id="gallery" class="gallery">
+      <div class="section__title">
+        <h2>Галерея работ</h2>
+      </div>
+      <div class="section__gallery">
+        <div class="container-fluid">
+          <div class="row">
+            <ul id="hexGrid">
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/1.jpg"
+                  >
+                    <img src="img/@2x/gallery/1.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/2.jpg"
+                  >
+                    <img src="img/@2x/gallery/2.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/3.jpg"
+                  >
+                    <img src="img/@2x/gallery/3.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/4.jpg"
+                  >
+                    <img src="img/@2x/gallery/4.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/5.jpg"
+                  >
+                    <img src="img/@2x/gallery/5.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/6.jpg"
+                  >
+                    <img src="img/@2x/gallery/6.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/7.jpg"
+                  >
+                    <img src="img/@2x/gallery/7.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/8.jpg"
+                  >
+                    <img src="img/@2x/gallery/8.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/9.jpg"
+                  >
+                    <img src="img/@2x/gallery/9.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/10.jpg"
+                  >
+                    <img src="img/@2x/gallery/10.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/11.jpg"
+                  >
+                    <img src="img/@2x/gallery/11.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <a
+                    class="hexLink"
+                    data-fslightbox="gallery"
+                    href="img/_src/gallery/12.jpg"
+                  >
+                    <img src="img/@2x/gallery/12.jpg" alt="" />
+                    <div class="overlay">
+                      <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<div class="container">
+    <section id="reviews" class="testimonials">
+      <div class="section__title">
+        <h2>Отзывы клиентов</h2>
+      </div>
+      <div class="section_testimonials">
+        <div class="container">
+          <div class="row px-3">
+            <div class="col-md-5 col-sm-8 col-12 testimonials__card">
+              <div class="card">
+                <div class="card__img">
+                  <img src="img/@2x/avatars/1.jpg" alt="" class="avatar" />
+                </div>
+                <div class="card__text">
+                  <h6 class="card__title">Валерий</h6>
+                  <p class="card__desc">
+                    Решился на покупку стола в стиле Лофт. Сервис радует. Стол просто бомба!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 ml-auto col-sm-8 col-12 testimonials__card">
+              <div class="card">
+                <div class="card__img">
+                  <img src="img/@2x/avatars/2.jpg" alt="" class="avatar" />
+                </div>
+                <div class="card__text">
+                  <h6 class="card__title">Сергей</h6>
+                  <p class="card__desc">
+                    Заказали светильники в наш небольшой бар. Сделали все в срок и как было оговорено. Очень довольны.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w100 d-none d-block-md my-3"></div>
+            <div class="col-md-5 col-sm-8 col-12 testimonials__card">
+              <div class="card">
+                <div class="card__img">
+                  <img src="img/@2x/avatars/3.jpg" alt="" class="avatar" />
+                </div>
+                <div class="card__text">
+                  <h6 class="card__title">Наталья</h6>
+                  <p class="card__desc">
+                    Делали нам в прихожую вешалки с комодиком. Получилось очень красиво и качество на высоте. Рекомендую!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 ml-auto col-sm-8 col-12 testimonials__card">
+              <div class="card">
+                <div class="card__img">
+                  <img src="img/@2x/avatars/4.jpg" alt="" class="avatar" />
+                </div>
+                <div class="card__text">
+                  <h6 class="card__title">Контантин</h6>
+                  <p class="card__desc">
+                    Давно хотел себе барные стулья на кухню в таком стиле. Ребята постарались - сделано на уровне.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contact">
+      <div class="container-fluid d-flex flex-column flex-sm-row">
+        
+          <img src="img/@2x/map.jpg" alt="" class="img-responsive w100">
+            <div class="contact__card col-10 col-sm-8 col-md-6 col-lg-4 align-self-center">
+              <div class="row no-gutters">
+                <div class="circle"><i class="fa fa-map-marker-alt"></i></div>
+                <span>Беларусь, Гродно<br>Академическая 20</span>
+              </div>
+              <div class="row no-gutters">
+                <div class="circle"><i class="fa fa-phone"></i></div>
+                <span>+375 (29) 737-637-7</span>
+              </div>
+              <div class="row no-gutters">
+                <div class="circle"><i class="fa fa-envelope"></i></div>
+                <span>clients@loft1.by</span>
+              </div>
+            </div>
 
-		<div class="parent"> <!-- Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/ -->
-			<img class="lazy img-responsive example-img"
-			src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-			data-src="img/@1x/preview.jpg"
-			data-srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x"
-			alt="Start HTML5 Template">
-		</div>
-		<br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. <em>Ad distinctio animi</em>, dolorum eaque praesentium unde aliquid, mollitia itaque voluptate quos modi et incidunt tempora fugiat voluptatum quia esse dolor repellat.</p>
-		<br>
-		<div class="example-grid">
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo vero molestias, esse doloribus corrupti, nemo minus ullam tempore tenetur magni aut quos soluta sit adipisci eius expedita amet non.</div>
-			<div>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-		</div>
-
-	</div>
-
-	<script src="js/scripts.min.js"></script>
-
-</body>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="logo col-6 col-sm-6 col-md-3 align-self-center">
+            <img src="img/logo-loft.svg" alt="" class="py-3 img-responsive" />
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 align-items-center align-self-center d-flex flex-column">
+            <p>&copy; Все права защищены</p>
+            <p>Сделано в <a href="http://caliber.by">caliber.by</a></p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-2 align-self-center align-items-center center my-1">УНП 591503839</div>
+        </div>
+      </div>
+    </section>
+    <!--   MODAL   -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content col-10 col-sm-8 col-md-6 col-lg-4">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Обратный звонок</h2>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row mt-4">
+              <div class="col">
+                <div class="input-container">
+                  <input
+                    type="text"
+                    class=""
+                    required=""
+                  />
+                  <label>Ваше Имя</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-container">
+                  <input
+                    type="tel"
+                    class=""
+                    required=""
+                  />
+                  <label>Телефон</label>
+                </div>
+              </div>
+            </div>
+            <div class="container center">
+              <a href="#" class="btn btn-primary my-2">Отправить <i class="icon fas fa-paper-plane"></i
+              ></a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <h3</h3>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.min.js"></script>
+  </body>
 </html>

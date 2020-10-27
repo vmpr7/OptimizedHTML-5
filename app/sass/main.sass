@@ -9,6 +9,11 @@
 	background-color: $accent
 	color: #fff
 
+a:hover
+	text-decoration: none
+	color: initial
+ul
+	padding: 0
 input, textarea
 	outline: none
 	&:focus:required:invalid
@@ -17,46 +22,474 @@ input, textarea
 		border-color: green
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Roboto', sans-serif
+	font-family: $font-stack
 	overflow-x: hidden
 	color: $text
 
-// Custom Sass / Remove before use
+// Custom Sass
 
-.container
-	max-width: 700px
-	padding:
-		right: $gutter/2
-		left: $gutter/2
-	margin:
-		left: auto
-		right: auto
+section
+	padding: 135px 0 75px
+	position: relative
+	z-index: 0
+	.section__title
+		text-align: center
+		h2
+			font-size: 32px
+			text-align: center
+			position: relative
+			display: inline-block
+			margin-bottom: 65px
+			&::before
+				content: '\2B22'
+				position: absolute
+				color: transparent;
+				text-shadow: 0 0 0 $accent;
+				transform: scale(3)
+				z-index: -1
+			&::after
+				content: ''
+				display: block
+				width: 90px
+				height: 5px
+				background-color: $accent
+				margin-left: auto
+				margin-right: auto
+				margin-top: 5px
+	&.home
+		background-image: url("../img/@1x/main-bg.jpg")
+		background-attachment: scroll
+		background-repeat: no-repeat
+		background-size: cover
+		padding: 0
+		position: relative
+		header
+			max-height: 120px
+			background: rgba(0, 0, 0, 0.2)
+			padding: 20px 0px
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+			font-size: 16px
+			font-weight: 600
+			.container
+				position: relative
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+				justify-content: space-between
+		.nav-contact
+			text-align: right
+			&__phone
+				color: $white
+				font-weight: 700
+				font-size: 20px	
+			&__callback
+				a
+					border-bottom: 2px dotted
+					color: $accent
+					&:hover
+						border-bottom: transparent
+
+		.main-offer
+			margin-top: 100px
+			margin-bottom: 100px
+			text-align: center
+			color: $white
+			h1
+				font-size: 46px
+				font-weight: 900
+			p
+				margin: 0
+				font-size: 24px
+				font-weight: 600
+		.plus__section
+			position: relative
+			background-color: $white
+			border-radius: 10px
+			transform: translateY(50%)
+			margin-left: auto
+			margin-right: auto
+			padding: 0px 50px
+			box-shadow: $shadow
+			.plus__card
+				padding: 30px 18px
+				display: flex
+				flex-direction: column
+				.plus__title
+					text-align: center
+					display: inline-flex
+					align-items: center
+					margin-bottom: 10px
+
+					h4
+						font-size: 14px
+						font-weight: 600
+						display: inline-block
+						padding-left: 10px
+				.plus__desc
+					font-size: 12px
+					display: inline-block
+					p
+	&.products
+		.section__title
+			padding-top: 83px
+		.section__products
+			.product__card
+				background-color: $white
+				box-shadow: $card-shadow
+				padding: 0
+				& a
+					position: absolute
+					top: 0
+					left: 0
+					z-index: 1
+					width: 100%
+					height: 100%
+					text-align: center
+					padding-top: 40%
+					transition: 0.5s all
+					background-color: $accent
+					span
+						font-size: 18px
+						color: $text
+						font-weight: 600
+				&:hover > a
+					opacity: 1
+				.product__desc
+					padding: 10px 10px 26px
+					text-align: center
+					.product__title
+						font-size: 14px
+						font-weight: 400
+						margin-bottom: 5px
+					.product__cost
+						font-size: 18px
+						font-weight: 600
+						margin-bottom: 16px
+
+	&.testimonials
+		background: url(../img/_src/reviews-bg.jpg)
+		background-attachment: fixed
+		background-size: cover
+		&::before
+			background-color: rgba($gray, 0.9)
+			content: ''
+			display: block
+			height: 100%
+			position: absolute
+			width: 100%
+			top: 0
+			z-index: -1
+
+		.testimonials__card
+			background-color: $white
+			padding: 10px
+			border-radius: 5px
+			margin-bottom: 40px
+			
+			.card
+				display: flex
+				border: 1px solid $accent
+				border-radius: 5px
+				&__img
+					align-self: center
+					padding-left: 20px
+					padding-right: 20px
+				&__text
+					margin-top: 30px
+				&__title
+					font-size: 18px
+					font-weight: 600
+				&__desc
+					font-size: 12px
+					font-weight: 300
+
+	&.special
+		background-color: $gray
+		.section__title
+			text-align: left
+		.special__offer
+			text-align: left
+			.offer__title
+				font-size: 24px
+				font-weight: 600
+				margin-bottom: 30px
+			p
+				font-size: 18px
+				margin-bottom: 15px
+				&:last-child
+					margin-bottom: 10px
+			span
+				font-size: 16px
+				font-weight: 300
+				color: darken($white, 50%)
+		.offer__image
+			&::before
+				content: '\2B22'
+				position: absolute
+				color: transparent;
+				text-shadow: 0 0 0 $accent;
+				transform: scale(3)
+				z-index: -1
+	.contact
+		&__card
+			background-color: $white
+			box-shadow: $shadow
+			border-radius: 5px
+			padding: 20px 40px
+			// width: 40%
+			position: absolute
+			left: 5%
+			outline: 1px solid $accent
+			outline-offset: -10px
+			.row
+				margin-bottom: 10px
+				margin-top: 10px
+				.circle
+
+					background-color: $accent
+					border-radius: 50%
+					width: 60px
+					height: 60px
+					display: flex
+					align-items: center
+					justify-content: center
+					i
+						font-size: 30px
+				span
+					font-size: 18px
+					padding-left: 25px
+					align-self: center
+	&.footer
+		padding-top: 10px
+		padding-bottom: 10px
+		background-color: $text
+		color: $white
+		p
+			margin-bottom: 5px
+		a
+			color: $accent
+			&:hover,
+			&:focus
+				color: darken($accent, 20%)
+.btn
+	display: inline-block
+	border-radius: 50px
+	border: none
+	color: $text
+	text-align: center
+	font-size: 14px
+	padding: 17px 23px
+	min-width: 250px
+	transition: all 0.5s
+	cursor: pointer
+	margin-top: 40px
+	position: relative
+	& .icon
+		color: $text
+		position: absolute
+		opacity: 0
+		right: 0px
+		transition: 0.5s
+		font-size: 20px
+	&:hover
+		padding-right: 40px
+		& .icon
+			opacity: 1
+			right: 20px
+.btn-primary
+	background-color: $accent
+	box-shadow: 0px 0px 10px lighten($accent, 20%)
+	&:hover
+		box-shadow: none
+
+
+.hex 
+	.overlay 
+		width: 100%
+		padding: 5%
+		top: 60%
+		padding-bottom: 50%
+		opacity: 0
+		background-color: rgba($accent, 80%)
+		transition: opacity .3s ease-out
+		position: relative
+		display: flex
+		justify-content: center
+		& i
+			margin-top: 20px
+
+.hexLink:hover .overlay,
+.hexLink:focus .overlay 
+  opacity: 1
+
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+.center
+	text-align: center
 
-.example-grid
-	display: grid
-	grid-gap: $gutter
-	grid-template-columns: 1fr 1fr
-	grid-template-areas: "left right"
-	> div:first-child
-		grid-area: left
-	> div:last-child
-		grid-area: right
-	+media-breakpoint-down(xs)
-		display: block
-		> div
-			padding: $gutter/2 0
-	
-.example-img
-	width: 100%
+.w100
+	width: 100% !important
 
 .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
 	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+.opacity-0
+	opacity: 0
+
+.hide
+	display: none
+
+
+
+// MODAL ---------------------------- ////
+.modal 
+	display: none 
+	position: fixed 
+	z-index: 100
+	padding-top: 100px
+	left: 0 
+	top: 0 
+	width: 100% 
+	height: 100% 
+	overflow: auto 
+	background-color: $text 
+	background-color: rgba($text,0.6)
+	overflow: hidden
+
+.close 
+	color: darken($white, 10%)
+	float: right 
+	font-size: 28px 
+	font-weight: bold 
+.close:hover,
+.close:focus 
+	color: $text 
+	text-decoration: none 
+	cursor: pointer 
+
+.modal-header 
+	padding: 2px 16px 
+	background-color: $accent
+	color: white 
+.modal-body 
+	padding: 2px 16px 
+.modal-footer 
+	padding: 2px 16px 
+	background-color: $accent 
+	color: white 
+.modal-content 
+	position: relative 
+	background-color: $white
+	margin: auto 
+	padding: 0 
+	border: 1px solid darken($white, 15%) 
+	width: 60% 
+	box-shadow: 0 4px 8px 0 rgba($text, 0.2),0 6px 20px 0 rgba($text, 0.19) 
+	animation-name: animatetop 
+	animation-duration: 0.4s 
+@keyframes animatetop 
+	from 
+		top: -200px 
+		opacity: 0 
+	to 
+		top: 0px 
+		opacity: 1 
+
+.input-container
+	position: relative
+	margin-bottom: 25px
+
+.input-container label
+	position: absolute
+	top: 0px
+	left: 0px
+	font-size: 14px
+	color: $text
+	pointer-event: none
+	transition: all 0.5s ease-in-out
+
+.input-container input
+	border: 0
+	border-bottom: 1px solid $gray
+	background: transparent
+	width: 100%
+	padding: 8px 0 5px 0
+	font-size: 14px
+	color: $text
+
+	&:focus
+		border: none
+		outline: none
+		border-bottom: 1px solid darken($accent, 20%)
+
+	&:focus~label,
+	&:valid~label
+		top: -12px
+		font-size: 10px
+
+@media screen and ( max-width: 991px ) 
+	section
+		&.products
+			.product__card
+				margin-bottom: 30px
+		&.testimonials
+
+			.testimonials__card
+				margin-bottom: 30px
+				margin-left: auto
+				margin-right: auto
+
+@media screen and ( max-width: 767px )
+	section
+		.contact
+			padding: 25px 0 45px
+			&__card
+				padding: 20px
+				left: 0
+				position: relative
+				.row
+					margin-bottom: 20px
+					.circle
+
+						border-radius: 50%
+						width: 40px
+						height: 40px
+						i
+							font-size: 20px
+					span
+						font-size: 16px
+						padding-left: 20px
+						align-self: center
+
+@media screen and ( max-width: 543px )
+	section
+		padding: 85px 0 45px
+		&.home
+			.plus__section
+				padding: 0 20px
+				.plus__card
+					padding: 15px 10px
+					.plus__title
+
+
+						h4
+							font-size: 14px
+							font-weight: 600
+							display: inline-block
+							padding-left: 10px
+					.plus__desc
+						font-size: 12px
+						display: inline-block
+		&.products
+			padding-top: 235px
+			.section__title
+		&.contact
+			padding: 25px 0 45px
+		

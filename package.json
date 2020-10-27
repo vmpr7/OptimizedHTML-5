@@ -1,26 +1,39 @@
 {
-	"name": "optimizedhtml",
-	"version": "5.0.0",
-	"description": "OptimizedHTML 5 - Start HTML Template",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "WebDesign Master",
-	"license": "ISC",
-	"devDependencies": {
-		"bootstrap": "^4.4.1",
-		"browser-sync": "^2.26.7",
-		"del": "^5.1.0",
-		"gulp": "^4.0.2",
-		"gulp-autoprefixer": "^7.0.1",
-		"gulp-clean-css": "^4.2.0",
-		"gulp-concat": "^2.6.1",
-		"gulp-newer": "^1.4.0",
-		"gulp-rename": "^2.0.0",
-		"gulp-responsive": "^3.0.1",
-		"gulp-rsync": "0.0.8",
-		"gulp-sass": "^4.0.2",
-		"gulp-uglify-es": "^2.0.0"
-	}
+  "name": "loftfurniture",
+  "version": "5.0.0",
+  "description": "Loft Furniture Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vmpr_7",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "fslightbox": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-responsive": "^3.0.1",
+    "gulp-rsync": "0.0.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "mobile-menu": "^3.0.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmpr7/loft-furniture-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vmpr7/loft-furniture-template/issues"
+  },
+  "homepage": "https://github.com/vmpr7/loft-furniture-template#readme"
 }

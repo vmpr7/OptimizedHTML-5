@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
 // User variables:
-$accent: orange
-$text: #333
-
+$fa-font-path: "../fonts/fontawesome"  
+$accent: #FCD857
+$text: #151308
+$white: #fff
+$shadow: 0px 3px 15px rgba($text,0.2)
+$card-shadow: 0px 5px 10px rgba($text, 0.2)
+$gray: darken($white, 8%)
+$primary-bkd-color: transparent
+$font-stack: 'Montserrat', sans-serif
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 20px
+$grid-gutter-width: 30px
 $gutter: $grid-gutter-width
 
 // // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
 // // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
 // // Default variables: node_modules/bootstrap/scss/_variables.scss
 // $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+$grid-breakpoints: (xxs: 0, xs: 544px, sm: 768px, md: 992px, lg: 1440px, xl: 1920px);
+$container-max-widths: (xs: 528px, sm: 720px, md: 960px,lg: 1380px, xl: 1800px);
