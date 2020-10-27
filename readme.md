@@ -1,4 +1,4 @@
 <h1>Template for Loftmebel (loft1.by)</h1>
 <p></p>
 
-##Run gulp in terminal
+<h2>Run <small>gulp</small> in terminal</h2>
